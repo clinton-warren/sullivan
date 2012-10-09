@@ -1,0 +1,248 @@
+h1{
+	font-family: 'proxima_novaextrabold';
+	font-size:20px;
+}
+h2 {
+	font:30px/34px 'proxima_nova_rgbold', serif;
+}
+h3 {
+	font-family: 'proxima_nova_ltregular';
+	font-size:20x;
+	text-transform:uppercase;
+}
+p {
+	 font: 17px/29px 'proxima_nova_rgregular', serif;
+}
+a {
+	color:#cb0000;
+}
+.rounded {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.last {
+	border:none !important;
+}
+.page-heading {
+	color:#cb0000;
+	text-align:center;
+	margin-top:2em;
+	margin-bottom:1em;
+}
+.page-heading-left {
+	width:10%;
+	height:50%;
+	border-bottom:1px solid gray;
+	position:absolute;
+	left:20%;
+	top:0;
+}
+.page-heading-right {
+ 	border-bottom: 1px solid gray;
+    height: 50%;
+    position: absolute;
+    right: 20%;
+    top: 0;
+    width: 10%;
+	
+}
+.page-subheading {
+	text-align:center;
+	font-family:'proxima_nova_rgregular';
+	font-size:50px;
+	margin-bottom:.25em;
+}
+.page-middle {
+	padding-bottom:3em;
+	padding-top:3em;
+}
+
+
+/* HOMEPAGE  */
+
+.homepage-middle {
+	height:42.188em;
+	background:url(../images/homepage-middle.jpg) no-repeat center;
+	background-size:cover;
+	padding-top:5em;
+}
+.homepage-middle ul, .aop-bottom ul, .about-team ul{
+	margin-left:1.5em;
+}
+.homepage-middle ul li, .aop-bottom ul li, about-team ul li{
+		list-style-image:url(../images/list-arrow.png);
+	font-family: 'proxima_nova_ltregular';
+	font-size:20x;
+	text-transform:uppercase;
+	border-bottom:1px solid #D5D2C1;
+	padding-bottom:1em;
+	padding-top:1em;
+}
+.homepage-middle h2{
+	margin-bottom:.5em;
+	font-size:40px;
+	font-family: 'proxima_nova_ltregular';
+}
+.homepage-middle-right {
+	padding-top:3em;
+}
+.homepage-middle-right h2{
+	font-size:30px;
+}
+.homepage-middle-right h3{
+	text-transform:none;
+	line-height:1.5em;
+}
+.homepage-middle-contact{
+	width:15.313em;
+	height:2.875em;
+	background:url(../images/homepage-middle-contact.png);
+}
+.homepage-middle-contact p{
+	color:white;
+	font-family: 'proxima_nova_ltregular';
+	font-size: 25px;
+    padding-left: 2.25em;
+    padding-top: 0.3em;
+}
+.homepage-consultation {
+	padding-top:2em;
+	padding-bottom:2em;
+	text-align:center;
+	background:url(../images/contact-arrow.png) no-repeat right;
+}
+.homepage-contactbold {
+	font-family: 'proxima_nova_ltbold';
+	text-decoration:underline;
+}
+.homepage-caseresults {
+	background:url(../images/caseresults-bg.jpg) repeat;
+	padding-top:3em;
+	padding-bottom:3em;
+}
+.homepage-caseresults h2, .homepage-caseresults h3, .homepage-caseresults p, .homepage-caseresults img{
+	text-align:center;
+	margin:0 auto;
+	display:block;
+}
+.homepage-caseresults p{
+	margin-bottom:1em;
+}
+.homepage-caseresults h3 {
+	color:#fcff74;
+	margin-bottom:1em;
+}
+.homepage-contact {
+	background:url(../images/homepage-contactbg.jpg) repeat-x;
+	padding-top:2.5em;
+	padding-bottom:2.5em;
+}
+.homepage-contact h2 {
+	font-family: 'proxima_nova_ltregular';
+	font-size:40px;
+	margin-bottom:.5em;
+}
+.homepage-contact select {
+	width:105% !important;
+}
+.homepage-contact textarea, .contact-form textarea {
+	height:8em;
+}
+.homepage-contact input, .contact-form input, .contact-form select, .homepage-contact select, .contact-form textarea, .homepage-contact textarea {
+	width:100%;
+	font-family: 'proxima_nova_rgregular';
+	color:#938d8a;
+	font-size:16px;
+	padding:8px;
+	margin-top:.5em;
+	margin-bottom:.5em;
+	border:1px solid #938d8a;
+}
+.homepage-contact button, .contact-form button {
+	border:none;
+}
+.homepage-send {
+	background: url("../images/homepage-send.png") repeat scroll 0 0 transparent;
+    float: right;
+    height: 46px;
+    margin-right: -1.9em;
+    width: 104px;
+}
+
+
+/*  CONTACT PAGE */
+.contact-form textarea, .contact-form input, .contact-form select {
+	background-color:#ebe9e9;
+}
+.contact-form select {
+	width:104% !important;
+}
+.contact-business-title {
+	font-size:24px;
+	margin-bottom:.5em;
+}
+
+
+/* CASE RESULTS */
+.case-result {
+	padding-top:1.5em;
+	width:100%;
+	border-bottom:1px solid gray;
+	padding-bottom:1.5em;
+}
+.case-result-title {
+	font:26px/29px 'proxima_nova_ltbold';
+	margin-bottom:.5em;
+}
+.case-result-readmore {
+	color:#cb0000;
+	padding-left:1.5em;
+	background:url(../images/readmore.png) no-repeat;
+	margin-left:2em;
+}
+
+/* AREAS OF PRACTICE */
+
+.areas-of-practice p{
+	margin-bottom:2em;
+}
+.aop-highlight {
+	color:#cb0000;
+	font:32px/34px 'proxima_nova_cn_ltregular';
+}
+.areas-of-practice img {
+	margin:2em;
+}
+.aop-bottom {
+	background:url(../images/homepage-contactbg.jpg) repeat-x;
+	padding-top:2em;
+	padding-bottom:4em;
+}
+.aop-bottom h3{
+	font-size:38px;
+	margin-bottom:.5em;
+	text-align:center;
+	text-transform:none;
+}
+
+/* ABOUT US */
+.about-subheading {
+	text-transform:none;
+	font-size:30px;
+	text-align:center;
+	margin-bottom:2em;
+}
+.about p{
+		margin-bottom:2em;
+}
+.about-team {
+	background-color:white;
+	padding-top:1em;
+	
+}
+
+.about-team ul li {
+	width:80%;
+	margin-left:2em;
+}

@@ -1,0 +1,137 @@
+@import url(fonts.css);
+@import url(subpages.css);
+
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+	body {
+		
+	}
+	
+/* HEADER */
+	
+	.header-container {
+		height:10.375em;
+		width:100%;
+		background:url(../images/header-bg2.jpg);
+	}
+	.header {
+		height:6.625em;
+		background:url(../images/header-bg.jpg);
+		padding-top:3.75em;
+	}
+	
+	
+	.logo {
+		
+	}
+	
+	
+/* NAVIGATION */
+
+.topnav ul {
+	margin-left:.25em;
+	
+}
+.topnav li {
+	   font-family: 'proxima_nova_ltregular';
+	  color:white;
+	  font-size:14px;	
+	  font-weight:bold;
+	text-transform:uppercase;
+	float:left;
+	list-style-type:none;
+	margin-left:2.8em;
+	padding-top:1em;
+}
+.topnav li a {
+	color:white;
+	text-decoration:none;
+}
+
+
+
+/* FOOTER */
+	
+	.footer-container {
+		background-color:#3D3A39;
+		padding-bottom:3em;
+		padding-top:3em;
+	}
+	
+	.footer-container p {
+		color:white;
+	}
+	
+	.copyright {
+		margin-top:3em;
+	}
+	
+	.copyright p{
+		color:#999;
+		font-family: 'proxima_nova_rgregular';
+		font-size:13px;
+	}
+	
+	.site-design p{
+		 font-family: 'proxima_nova_ltregular';
+		font-size:12px;
+		color:#999;
+		padding-left:7em;
+		text-transform:uppercase;
+	}
+	
+	.footernav li {
+	 font-family: 'proxima_nova_rgbold';
+	 color:white;
+	 font-size:12px;	
+	 text-transform:uppercase;
+	 float:left;
+	 list-style-type:none;
+	 margin-left:3.5em;
+	 padding-top:1em;
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	body {
+		
+	}
+
+}
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+}
