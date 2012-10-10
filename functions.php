@@ -8,7 +8,8 @@ function load_js_files() {
 wp_deregister_script('jquery');
 wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js');
 wp_enqueue_script('jquery');
- 
+wp_register_script('site-script',get_stylesheet_directory_uri().'/js/site-script.js');
+wp_enqueue_script('site-script'); 
 wp_register_script( 'css3-mediaqueries', get_stylesheet_directory_uri() . '/js/css3-mediaqueries.js');
 
 wp_enqueue_script('css3-mediaqueries');

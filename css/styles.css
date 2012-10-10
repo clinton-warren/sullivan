@@ -51,6 +51,88 @@
 }
 
 
+/* JQuery Dropdown, CSS Fallback */
+
+
+/* Targeting both first and second level menus */
+#nav li {
+	position: relative;
+	font-family: 'proxima_nova_ltregular';
+	color:white;
+	font-size:14px;	
+	font-weight:bold;
+	text-transform:uppercase;
+	float:left;
+	list-style-type:none;
+	margin-left:2.8em;
+	padding-top:1em;
+	
+}
+#nav li a {
+	color: white;
+	text-decoration:none;
+	display: block;
+
+}
+#nav li a:hover {
+	background: none;
+	text-decoration: none;
+}
+
+/* Targeting the first level menu */
+#nav {
+	display: block;
+	padding: 10px 0;
+	z-index: 100;
+	position: absolute;
+}
+#nav > li > a {
+}
+
+/* Targeting the second level menu */
+#nav li ul {
+	background:#e1ddd3;
+	background:url(../images/header-bg2.jpg);
+	color:white;
+	display: none;
+	left:-30px;
+	width:275px;
+	position: absolute;
+}
+#nav li ul li {
+	width: 100%
+}
+#nav li ul li a {
+	background: none;
+	border: none;
+	line-height: 30px;
+	margin-left: 0 !important;
+
+}
+#nav li ul li a:hover {
+
+}
+
+/* Third level menu */
+#nav li ul li ul{
+	right: -200px; top: 0;
+}
+
+/* A class of current will be added via jQuery */
+#nav li.current > a {
+	background: #f7f7f7;
+}
+/* CSS fallback */
+#nav li:hover > ul.child {
+	display: block;
+}
+#nav li:hover > ul.grandchild  { 
+	display: block; 
+}
+
+
+
+
 
 /* FOOTER */
 	
