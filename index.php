@@ -32,7 +32,7 @@ get_header() ?>
 	<section class="row homepage-consultation">
 		<div class="onecol"></div>
 		<div class="tencol">
-			<h3>We offer free consultations to assess your case.  <span class="homepage-contactbold">Contact Us</span></h3>
+			<h3>We offer free consultations to assess your case.  <span class="homepage-contactbold"><a href="http://timsullivan.krd-design.net/?page_id=14">Contact Us</a></span></h3>
 		</div>
 		<div class="onecol last"></div>	
 	</section>
@@ -42,12 +42,12 @@ get_header() ?>
 			<div class="twocol"></div>
 			<div class="eightcol">
 				<h3>Latest Verdict</h3>
-				<h2>$7.4 Million for Traumatic Brain Injury</h2>
-				<p>Our client, a 28-year old female accountant, sustained a brain injury when she was struck
-					while crossing in a sidewalk.  The driver claimed that she ran out between parked cars.
-					Mauris quis aliquam nibh.  In vitae nulla lectus, non eleifend elit.  Sed turpis dolor, placeratet
-					quis facillis eget, ullamorper sed turpis.</p>
-				<img src="<?php bloginfo('template_directory')?>/images/caseresults-button.png">
+					<?php $custom_query = new WP_Query(array ( 'post_type' => 'caseresults', 'posts_per_page'=>1)); // exclude category 9
+					while($custom_query->have_posts()) : $custom_query->the_post(); ?>
+				<h2><?php the_title();?></h2>
+				<p><?php the_content();?></p>
+				<a href="http://timsullivan.krd-design.net/?page_id=12"><img src="<?php bloginfo('template_directory')?>/images/caseresults-button.png"></a>
+				<?php endwhile; ?>
 			</div>
 			<div class="twocol last"></div>
 			

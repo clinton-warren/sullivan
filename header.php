@@ -31,19 +31,19 @@
 					<li><a href="http://timsullivan.krd-design.net">Home</a></li>
 					<li><a href="http://timsullivan.krd-design.net/?page_id=8">Areas of Practice</a>
 					<ul class="child">
-						<li><a href="#">Personal Injury</a></li>
-						<li><a href="#">Motor Vehicle Accidents</a></li>
-						<li><a href="#">Trip, Slip & Fall</a></li>
-						<li><a href="#">Construction Accidents</a></li>
-						<li><a href="#">Medical Malpractice</a></li>
-						<li><a href="#">Premise Liability</a></li>
-						<li><a href="#">Worker Compensation</a></li>
+						<li><a href="http://timsullivan.krd-design.net/?page_id=17">Personal Injury</a></li>
+						<li><a href="http://timsullivan.krd-design.net/?page_id=19">Motor Vehicle Accidents</a></li>
+						<li><a href="http://timsullivan.krd-design.net/?page_id=21">Trip, Slip & Fall</a></li>
+						<li><a href="http://timsullivan.krd-design.net/?page_id=24">Construction Accidents</a></li>
+						<li><a href="http://timsullivan.krd-design.net/?page_id=26">Medical Malpractice</a></li>
+						<li><a href="http://timsullivan.krd-design.net/?page_id=28">Premise Liability</a></li>
+						<li><a href="http://timsullivan.krd-design.net/?page_id=30">Worker Compensation</a></li>
 					</ul>
 					
 					
 					</li>
 						
-					<li>About Us</li>
+					<li><a href="http://timsullivan.krd-design.net/?page_id=10">About Us</a></li>
 					<li><a href="http://timsullivan.krd-design.net/?page_id=12">Case Results</a></li>
 					<li><a href="http://timsullivan.krd-design.net/?page_id=14">Contact</a></li>
 				</ul>

@@ -120,7 +120,7 @@
 
 /* A class of current will be added via jQuery */
 #nav li.current > a {
-	background: #f7f7f7;
+	background:none;
 }
 /* CSS fallback */
 #nav li:hover > ul.child {
