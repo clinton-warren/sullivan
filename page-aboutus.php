@@ -9,92 +9,70 @@ Template Name: About Us
 	
 <section class="page-middle about">
 	<section class="row">
-		<div class="twocol"></div>
-		<div class="eightcol">
+		
+		<div class="fivecol">
+		<?php if(have_posts()) : while(have_posts()) : the_post(); ?>	
+		<?php
+		if(is_page(10)) {
+			$src = get_bloginfo('template_directory') . '/images/About_Tim.jpg';
+		}
+		elseif(is_page(72)) {
+			$src = get_bloginfo('template_directory') . '/images/about_Jim.jpg';
+			
+		}
+		?>
+		<img src="<?php echo $src; ?>" class="about-photo">	
+		
+		<div class="about-team">
+		<h1 class="page-subheading" style="text-align:left">Attorneys</h1>
+		<ul>
+			<li class="list-link"><a href="<?php echo get_permalink(10); ?>">Timothy Sullivan</a></li>
+			<li class="list-link"><a href="<?php echo get_permalink(72); ?>">James A. Domini</a></li>
+		</ul>
+		
+		</div>
+			
+		</div>
+		<div class="sevencol last">
 			<div style="position:relative">
 				<div class="page-heading-left"></div>
 				<h3 class="page-heading">About Us</h3>
 				<div class="page-heading-right"></div>
 			</div>
 						
-			<h1 class="page-subheading">Personal Injury Attorneys</h1>
-			<h3 class="about-subheading">Specializing in Workman's Compensations</h3>
-				
-		</div>
-		<div class="twocol last"></div>	
-	</section>
-	
-	<section class="row">
-		
-		<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-		<div class="twocol"></div>
-			<div class="eightcol"><?php the_content() ;?></div>
-		<?php endwhile; endif; ?>
-		<div class="twocol"></div>
-		
-		
-	</section>
-	
-	
-</section>
-
-<section class="aop-bottom">
-	<section class="row">
-		<div class="onecol"></div>
-		
-		
-		<div class="fourcol about-team">
-			<h3>Meet our Team</h3>
-			<ul>
-				<li>Timothy Sullivan</li>
-				<li>James A. Domini</li>
-				<li>Julianna Anderson</li>
-				<li>Michael Peterons</li>
-				<li class="last">Samantha Landsbury</li>
-			</ul>
-				
-		</div>
-		<div class="fivecol">
-			<img src="<?php bloginfo('template_directory');?>/images/about-groupphoto.jpg">
-		</div>
-		
-		
-		<div class="twocol last"></div>
-	</section>
-</section>
-
-
-	
-	<section class="footer-container">
-		<footer class="row footer">
-			<div class="threecol footer-logo">
-				<img src="images/footer-logo.png">
-			</div>
-			<div class="threecol"></div>
-			<div class="sixcol last">
-				<ul class="footernav">
-					<li>Home</li>
-					<li>Areas of Practice</li>
-					<li>About</li>
-					<li>Case Results</li>
-					<li>Contact</li>
-				</ul>
-			</div>
-		</footer>
-		<section class="row copyright">
-			<div class="ninecol">
-			<p>2012 Sullivan Law Firm | 217 Broadway #500, New York, NY 10007 | tel 212-566-8860 | fax 212-233-1060 | email tsullivan@sullivanlawfirm.com</p> 	
-			</div>
+			<h1 class="page-subheading"><?php echo get_post_meta($post->ID, 'name', true); ?></h1>
+			<h3 class="about-subheading"><?php echo get_post_meta($post->ID, 'title', true);?></h3>
 			
-			<div class="onecol"></div>
-			<div class="twocol last site-design">
-			<p>Site Design</p>
-			</div>
-		</section>
+			<?php the_content() ;?>
+		</div>
+		<?php endwhile; endif; ?>
+	
 	</section>
+	
+	
+	
+	
+</section>
+
+<section class="aboutus-bottom">
+	<section class="row">
+		<section class="onecol"></section>
+		<section class="tencol">
+		<div style="position:relative">
+			<div class="page-heading-left"></div>
+			<h3 class="page-heading">About Us</h3>
+			<div class="page-heading-right"></div>
+		</div>
+		<h1 class="page-subheading">Sullivan Law</h1>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+		et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+		commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+		Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		</section>
+		<section class="onecol last"></section>
+	</section>
+</section>
 
 
-
-</body>
-
-</html>
+	
+<?php get_footer();?>

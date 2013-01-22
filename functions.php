@@ -4,6 +4,22 @@
 
 add_action( 'wp_enqueue_scripts', 'load_js_files' );
 
+function ajax_sendmail() {
+$name = $_POST['name'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$area = $_POST['area'];
+$message = $_POST['message'];
+echo 'HELLO';
+
+wp_mail('clint@kimronemusdesign.com', 'NEW CONTACT', $message);
+
+die();
+	
+}
+
+
+
 function load_js_files() {
 wp_deregister_script('jquery');
 wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js');
@@ -11,10 +27,17 @@ wp_enqueue_script('jquery');
 wp_register_script('site-script',get_stylesheet_directory_uri().'/js/site-script.js');
 wp_enqueue_script('site-script'); 
 wp_register_script( 'css3-mediaqueries', get_stylesheet_directory_uri() . '/js/css3-mediaqueries.js');
-
 wp_enqueue_script('css3-mediaqueries');
 
+wp_localize_script( 'site-script', 'MyAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
 }
+
+add_action('wp_ajax_nopriv_ajax_sendmail', 'ajax_sendmail');
+add_action('wp_ajax_ajax_sendmail', 'ajax_sendmail');
+
+
+
+
 
 
 

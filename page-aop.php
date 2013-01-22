@@ -38,21 +38,21 @@ Template Name: Areas of Practice
 		
 		<div class="fourcol">
 			<ul>
-				<li>Personal Injury</li>
-				<li>Motor Vehicle Accidents</li>
-				<li class="last">Trip, Slip, and Fall</li>
+				<li class="list-link"><a href="<?php echo get_permalink(17); ?>">Personal Injury</a></li>
+				<li class="list-link"><a href="<?php echo get_permalink(19); ?>">Motor Vehicle Accidents</a></li>
+				<li class="last list-link"><a href="<?php echo get_permalink(21); ?>">Trip, Slip, and Fall</a></li>
 			</ul>
 		</div>
 		<div class="fourcol">
 			<ul>
-				<li>Construction Accidents</li>
-				<li>Medical Malpractice</li>
-				<li class="last">Premise Liability</li>
+				<li class="list-link"><a href="<?php echo get_permalink(24); ?>">Construction Accidents</a></li>
+				<li class="list-link"><a href="<?php echo get_permalink(26); ?>">Medical Malpractice</a></li>
+				<li class="last list-link"><a href="<?php echo get_permalink(28); ?>">Premise Liability</a></li>
 			</ul>
 		</div>
 		<div class="fourcol last">
 			<ul>
-				<li>Worker's Compensation</li>
+				<li class="list-link"><a href="<?php echo get_permalink(30); ?>">Worker's Compensation</a></li>
 			</ul>
 		</div>
 		

@@ -6,11 +6,11 @@
 		<div class="threecol"></div>
 		<div class="sixcol last">
 			<ul class="footernav">
-				<li>Home</li>
-				<li>Areas of Practice</li>
-				<li>About</li>
-				<li>Case Results</li>
-				<li>Contact</li>
+				<li><a href="<?php echo home_url(); ?>">Home</a></li>
+				<li><a href="<?php echo get_permalink(8); ?>">Areas of Practice</a></li>
+				<li><a href="<?php echo get_permalink(10); ?>">About</a></li>
+				<li><a href="<?php echo get_permalink(12); ?>">Case Results</a></li>
+				<li><a href="<?php echo get_permalink(14); ?>">Contact</a></li>
 			</ul>
 		</div>
 	</footer>
@@ -21,11 +21,11 @@
 		
 		<div class="onecol"></div>
 		<div class="twocol last site-design">
-		<p>Site Design</p>
+		<p><a href="http://www.kimronemusdesign.com">Site Design</a></p>
 		</div>
 	</section>
 </section>
-
+<?php wp_footer();?>
 
 
 </body>

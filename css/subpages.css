@@ -10,7 +10,7 @@ h3 {
 	font-size:20x;
 	text-transform:uppercase;
 }
-p {
+p, ul, li {
 	 font: 17px/29px 'proxima_nova_rgregular', serif;
 }
 a {
@@ -31,20 +31,20 @@ a {
 	margin-bottom:1em;
 }
 .page-heading-left {
-	width:10%;
+	width:8%;
 	height:50%;
 	border-bottom:1px solid gray;
 	position:absolute;
-	left:20%;
+	left:25%;
 	top:0;
 }
 .page-heading-right {
  	border-bottom: 1px solid gray;
     height: 50%;
     position: absolute;
-    right: 20%;
+    right: 25%;
     top: 0;
-    width: 10%;
+    width: 8%;
 	
 }
 .page-subheading {
@@ -63,40 +63,54 @@ a {
 
 .homepage-middle {
 	height:42.188em;
-	background:url(../images/homepage-middle.jpg) no-repeat center;
+	background:url(../images/Sullivan_Homepage.jpg) no-repeat center;
 	background-size:cover;
 	padding-top:5em;
 }
-.homepage-middle ul, .aop-bottom ul, .about-team ul{
+.homepage-middle ul, .aop-bottom ul {
 	margin-left:1.5em;
 }
-.homepage-middle ul li, .aop-bottom ul li, about-team ul li{
-		list-style-image:url(../images/list-arrow.png);
+.homepage-middle ul li, .aop-bottom ul li, .about-team ul li{
+	list-style-image:url(../images/list-arrow.png);
 	font-family: 'proxima_nova_ltregular';
 	font-size:20x;
 	text-transform:uppercase;
 	border-bottom:1px solid #D5D2C1;
 	padding-bottom:1em;
 	padding-top:1em;
+	padding-left:1em;
+}
+.homepage-middle ul li {
+
+    padding-left: 20px;
+	color:white;
+}
+.homepage-middle ul li a{
+	text-decoration:none;
+	color:white;
 }
 .homepage-middle h2{
 	margin-bottom:.5em;
 	font-size:40px;
 	font-family: 'proxima_nova_ltregular';
+	color:white;
 }
 .homepage-middle-right {
 	padding-top:3em;
 }
 .homepage-middle-right h2{
 	font-size:30px;
+	color:white;
 }
 .homepage-middle-right h3{
 	text-transform:none;
 	line-height:1.5em;
+	color:white;
 }
 .homepage-middle-contact{
 	width:15.313em;
 	height:2.875em;
+	margin-top:1em;
 	background:url(../images/homepage-middle-contact.png);
 }
 .homepage-middle-contact p{
@@ -131,6 +145,7 @@ a {
 }
 .homepage-caseresults p{
 	margin-bottom:1em;
+	text-align:justify;
 }
 .homepage-caseresults h3 {
 	color:#fcff74;
@@ -186,6 +201,15 @@ a {
 	margin-bottom:.5em;
 }
 
+.contact-success {
+	border:1px solid green;
+	padding:10px;
+	width:100%;
+	clear:both;
+	margin-top:10px;
+	display:none;
+	
+}
 
 /* CASE RESULTS */
 .case-result {
@@ -217,17 +241,23 @@ a {
 .areas-of-practice img {
 	margin:2em;
 }
-.aop-bottom {
+.aop-bottom, .aboutus-bottom {
 	background:url(../images/homepage-contactbg.jpg) repeat-x;
 	padding-top:2em;
 	padding-bottom:4em;
 }
+
 .aop-bottom h3{
-	font-size:38px;
-	margin-bottom:.5em;
-	text-align:center;
-	text-transform:none;
+font-size:38px;
+margin-bottom:.5em;
+text-align:center;
+text-transform:none;
 }
+.aop-bottom ul li a {
+	text-decoration:none;
+	color:black;
+}
+
 
 /* ABOUT US */
 .about-subheading {
@@ -242,10 +272,16 @@ a {
 .about-team {
 	background-color:white;
 	padding-top:1em;
-	
+}
+.about-photo {
+	margin-top:50px;
 }
 
 .about-team ul li {
 	width:80%;
 	margin-left:2em;
+}
+.about-team ul li a {
+	text-decoration:none;
+	color:black;
 }

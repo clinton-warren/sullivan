@@ -30,10 +30,10 @@ Template Name: Contact Page
 			<iframe width="460" height="260" style="margin-top:1em" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=217+broadway+%23500,+new+york,+ny&amp;aq=&amp;sll=41.500765,-72.757507&amp;sspn=1.775197,3.13385&amp;ie=UTF8&amp;hq=&amp;hnear=217+Broadway+%23500,+New+York,+10007&amp;t=m&amp;ll=40.71929,-74.009314&amp;spn=0.016914,0.039396&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=217+broadway+%23500,+new+york,+ny&amp;aq=&amp;sll=41.500765,-72.757507&amp;sspn=1.775197,3.13385&amp;ie=UTF8&amp;hq=&amp;hnear=217+Broadway+%23500,+New+York,+10007&amp;t=m&amp;ll=40.71929,-74.009314&amp;spn=0.016914,0.039396&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
 		</div>
 		<div class="fivecol">
-				<form action="" method="POST">
-				<input type="text" name="name" id="name" class="rounded " value="Name*" />
-				<input type="text" name="email" id="email" class="rounded " value="Email*" />
-				<input type="text" name="phone" id="phone" class="rounded" value="Phone*" />
+				<form action="" id="contact-form">
+				<input type="text" name="name" id="name" class="rounded contact-input" value="Name*" />
+				<input type="text" name="email" id="email" class="rounded contact-input " value="Email*" />
+				<input type="text" name="phone" id="phone" class="rounded contact-input" value="Phone*" />
 				<select class="rounded" name="area" id="area">
 				<option value=''>The Nature of Your Case</option>
 				<option value='cerebral-palsy'>Cerebral&#160;Palsy</option>
@@ -47,10 +47,15 @@ Template Name: Contact Page
 				<option value='motor-vehicle-accidents'>Motor Vehicle Accidents</option>
 				<option value='other'>Other Serious Injuries</option>
 				</select>
-				<textarea class="rounded" name="message" id="message">Message</textarea>
-				<input type="hidden" name="form_name" value="contact_form" />
+				<textarea class="rounded contact-input" name="message" id="message">Message</textarea>
+				<input type="hidden" name="action" value="ajax_sendmail" />
 				<button class="homepage-send rounded"></button>
 				</form>
+				
+				<div class="contact-success">
+				<p>Your message was sent successfully.  Thank you!</p>
+				</div>
+		
 		</div>
 		<div class="onecol"></div>
 	</section>
